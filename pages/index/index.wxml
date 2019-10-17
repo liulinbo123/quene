@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="title">
+  <view class="titleContent">
+    <label id="titlenumber">请选择业务类型</label>
+  </view>
+</view>
+<view class="content">
+  <scroll-view class="trademenu" scroll-y="true">
+    <view class="item" wx:for="{{trademenu}}" wx:for-index="index" wx:for-item="trade" wx:key="tradename"  bindtap="tradeclick"data-index="{{index}}" >
+      <view class="itemtrade">
+        <label class="tradename">{{trade.tradename}}</label>
+      </view>
+    </view>
+  </scroll-view>
+</view>

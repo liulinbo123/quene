@@ -1,0 +1,16 @@
+<!--pages/takepicture/picture.wxml-->
+<view class="content">
+  <view class="camera">
+    <image src="{{imagefront}}" bindtap="takepicturefront" mode="scaleToFill"></image>
+  </view>
+  <view class="camera">
+    <image src="{{imageback}}" bindtap="takepictureback" mode="scaleToFill" ></image>
+  </view>
+  <camera wx:if="{{photo}}" device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+</view>
+<view class="bottomcontent">
+<view class="btnview">
+    <button class="nextbtn" bindtap="clickbtn">提交</button>
+  </view>
+ </view>
+  

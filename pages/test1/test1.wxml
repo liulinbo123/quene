@@ -1,0 +1,128 @@
+<view class="getinfo">
+  <scroll-view class="elementcollection" scroll-y="true">
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">姓名</label>
+      </view>
+      <view class="nameview textcenter">
+        <input id="name" placeholder="请输入您的姓名" placeholder-class="placeholderstyle"></input>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">证件类型</label>
+      </view>
+      <view class="cardview">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{cardtype}}">
+          <view class="picker textcenter">
+            {{cardtypevalue}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">证件号码</label>
+      </view>
+      <view class="cardview textcenter">
+        <input id="name" type="idcard" placeholder="请输入您的证件号码" placeholder-class="placeholderstyle"></input>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">发证机关</label>
+      </view>
+      <view class="cardview textcenter">
+        <input id="name" placeholder="请输入您的发证机关" placeholder-class="placeholderstyle"></input>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">证件到期日</label>
+      </view>
+      <view class="dateview">
+        <picker mode="date" value="{{borthdate}}" start="1970-01-01" end="{{enddate}}" bindchange="bindDateChange">
+          <view class="picker textcenter">
+            {{borthdate}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">性别</label>
+      </view>
+      <view class="nameview">
+        <picker bindchange="bindSexChange" value="{{sexvalue}}" range="{{sextype}}">
+          <view class="picker textcenter">
+            {{sexvalue}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">国籍</label>
+      </view>
+      <view class="nameview">
+        <picker bindchange="bindCountryChange" value="{{countryvalue}}" range="{{countrytype}}">
+          <view class="picker textcenter">
+            {{countryvalue}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">民族</label>
+      </view>
+      <view class="nameview">
+        <picker bindchange="bindNationChange" value="{{nationvalue}}" range="{{nationtype}}">
+          <view class="picker textcenter">
+            {{nationvalue}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">手机号码</label>
+      </view>
+      <view class="cardview textcenter">
+        <input id="name" type="number" placeholder="请输入您的手机号码" placeholder-class="placeholderstyle"></input>
+      </view>
+    </view>
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">固定电话</label>
+      </view>
+      <view class="cardview displayinline textcenter">
+        <view class="areaA">
+          <input id="name" placeholder="区号" placeholder-class="placeholderstyle"></input>
+        </view>
+        -
+        <view class="areaB">
+          <input id="name" placeholder="座机号码" placeholder-class="placeholderstyle"></input>
+        </view>
+      </view>
+    </view>
+
+    <view class="displayinline borderstyle">
+      <view class="namelabelview">
+        <label id="namelabel">详细地址</label>
+      </view>
+      <view class="cardview textcenter">
+        <picker mode="region" bindchange="bindRegionChange" value="{{regionvalue}}" custom-item="{{customItem}}">
+          <view class="picker">
+            {{regionvalue[0]}}-{{regionvalue[1]}}-{{regionvalue[2]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class="setinfo">
+  <view class="btnview">
+    <button size="default" type="primary" bindtap="clickbtn">提交</button>
+  </view>
+</view>

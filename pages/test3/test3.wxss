@@ -1,0 +1,9 @@
+.cardtypeselectview{
+  width: 100%;
+  height: 300px;
+}
+
+.selectitem{
+  text-align: center;
+  line-height: 50px
+}

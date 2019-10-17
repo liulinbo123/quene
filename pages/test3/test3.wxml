@@ -1,0 +1,7 @@
+<view>
+  <picker-view class="cardtypeselectview" hidden='{{cardtypehidden}}' indicator-style="height: 50px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view class="selectitem" wx:for="{{cardtype}}">{{item.type}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

@@ -1,0 +1,107 @@
+/* pages/test1/test1.wxss */
+page {
+  height: 95%;
+  width: 100%;
+  background-color: #F5FAF4;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.placeholderstyle{
+     color:#B6B8B7;
+}
+
+.getinfo{
+  margin-top: 5%;
+  height: 85%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.elementcollection{
+  width: 100%;
+  height: 100%;
+  color: #959796;
+  font-size: 40rpx;
+}
+
+.displayinline{
+  display: flex;
+  /* background-color: greenyellow; */
+  align-items: center;
+}
+
+.borderstyle{
+  border-bottom-style: solid;
+  border-bottom-width: 3rpx;
+  border-bottom-color: #B6B8B7;
+  height: 100rpx;
+  margin-left: 40rpx;
+}
+
+.textcenter{
+  text-align: center;
+}
+
+.picker{
+  width: 450rpx;
+  height: 60rpx;
+}
+
+.nameview{
+  margin-left: 130rpx;
+}
+
+.cardview{
+  margin-left: 50rpx;
+}
+
+.dateview{
+  margin-left: 15rpx;
+}
+
+.cardtypeselectview{
+  margin-left: 50rpx;
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.selectitem{
+  text-align: center;
+  line-height: 50px
+}
+
+.areaA{
+  width: 150rpx;
+}
+
+.areaB{
+  width: 275rpx;
+}
+
+.setinfo{
+  height: 15%;
+  background-color: #F5FAF4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnview{
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+}
+
+.nextbtn{
+  background-color: #73CDF6;
+  border-radius: 5%/60%;
+  color: #FFFFFF;
+}

@@ -1,0 +1,16 @@
+/* pages/customer/customer.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+.title{
+  height:20%;
+  background-color: #FBE979;
+}
+
+.content{
+  height: 80%;
+  background-color: #6BD089;
+}

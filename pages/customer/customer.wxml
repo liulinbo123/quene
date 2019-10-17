@@ -1,0 +1,8 @@
+<!--pages/customer/customer.wxml-->
+<view class="title">
+  <button wx:if="{{hasUserInfo}}" bindgetuserinfo="login" open-type="getUserInfo">登陆</button>
+  <image src="{{userInfo.avatarUrl}}"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="content">
+</view>
